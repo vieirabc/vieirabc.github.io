@@ -1,0 +1,283 @@
+/*ALL*/
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('../img/ico/textura.svg');
+}
+
+header, main, footer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, main {
+    background: #fffdfde1;
+}
+
+.perfil, .skills, .portfolio {
+    width: 95%;
+    padding-top: 40px;
+}
+
+/*-----------------//-----------------*/
+/*HEADER*/
+
+header {
+    text-align: center;
+}
+
+.vetorized-picture {
+    width: 18%;
+    border-radius: 100%;
+    margin: 3% auto 1%;
+}
+
+.title {
+    font-size: 4em;
+    font-family: 'Dancing Script', Georgia, 'Times New Roman', Times, serif;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    font-family: 'Josefin Slab', Georgia, 'Times New Roman', Times, serif;
+    padding: .5em 2em;
+    color: #045504;
+}
+
+.btn {
+    width: 200px;
+    padding: .75em 2em;
+    margin: 1.5em;
+    border-radius: 5em;
+    border: 2px solid #225222ff;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Nova Flat', Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    background: #225222ff;
+    color: white;
+    transition: all .3s;
+} .btn:hover {
+    background: transparent;
+    color: #1f8f1f;
+    border: 2px solid #1f8f1f;
+    font-weight: 700;
+    transform: scale(1.2);
+}
+
+/*-----------------//-----------------*/
+/*MAIN*/
+
+main {
+    padding-bottom: 50px;
+    color: #1b3a1bff;
+}
+
+/* PERFIL */
+
+.perfil {
+    display: flex;
+}
+
+.perfil-txt {
+    order: 1;
+    width: 60%;
+}
+
+.perfil-txt h2 {
+    font-family: 'Josefin Slab', Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+.perfil-txt p {
+    padding-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.social-media {
+    order: 2;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media h3, .social-media-end h3 {
+    font-family: 'Dancing Script', Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: .5em;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-icons a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.social-media-icons img {
+    width: 50px;
+    margin: 0 10px;
+    transition: transform .2s;
+} .social-media-icons img:hover {
+    transform: scale(1.2);
+}
+
+/*-----------------//-----------------*/
+/*SKILLS*/
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills h2 {
+    font-size: 2em;
+    font-family: 'Josefin Slab', Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 10px;
+}
+
+.skill-list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*-----------------//-----------------*/
+/*PORTFOLIO*/
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio h2 {
+    font-size: 2em;
+    font-family: 'Josefin Slab', Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 10px;
+}
+
+.all-polaroids {
+    background: pink;
+    display: inline-block;
+    width: 100%;
+}
+
+.polaroid {
+    background: red;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 40px 40px 0;
+}
+
+.behind01, .behind02, .internal{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: #fff8f0;
+    border-radius: 5px;
+    border: 1px solid #b1abab
+}
+
+.behind01, .behind02 {
+    transform-origin: 100% 100%;
+    transition: .3s all ease-in-out;
+}
+
+.polaroid:hover .behind01 {
+    transform: rotate(3deg);
+} .polaroid:hover .behind02 {
+    transform: rotate(6deg);
+}
+
+.behind01 {
+    z-index: 1;
+}
+
+.behind02 {
+    z-index: 0;
+}
+
+.internal {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.internal img {
+    margin: 15px 0;
+    width: 220px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.internal h3 {
+    font-family: 'Caveat', Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.7em;
+    color: #225222ff;
+}
+
+/*-----------------//-----------------*/
+/*FOOTER*/
+
+footer {
+    background: rgb(41, 41, 41);
+    color: white;
+}
+
+.container {
+    display: flex;
+}
+
+.container img {
+    width: 40%;
+    padding: 0 15% 0 10%;
+}
+
+.social-media-end {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-icons-end{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-icons-end a {
+    margin: 0 10px;
+}
+
+.social-media-icons-end img {
+    width: 50px;
+    transition: transform .2s;
+} .social-media-end img:hover {
+    transform: scale(1.2);
+}
+
+footer p {
+    padding: 30px 0 5px 0;
+    font-size: .7em;
+}

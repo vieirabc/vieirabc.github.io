@@ -1,0 +1,70 @@
+.softwares {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    padding-top: 10px;
+}
+
+.softwares img {
+    width: 50px;
+    padding-right: 10px;
+}
+
+.lv-bar {
+    width: calc(95% - 50px);
+    height: 20px;
+    border-radius: 20px;
+    background: linear-gradient( 10deg, #575757, rgb(32, 30, 30));
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    transition: transform 1s;
+} .lv-bar:hover {
+    transform: scale(1.05) translate(20px);
+}
+
+.lv-bar-percent {
+    height: 100%;
+    background: linear-gradient(10deg, #19990d, #165310);  
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    line-height: 1.7;
+    font-family: 'Nova Flat', Georgia, 'Times New Roman', Times, serif;
+    font-size: .8em;
+}
+
+/*Lv X*/
+
+.Lv01 {
+    /* Illustrator */
+    width: 40%;
+    animation: up-level 2s alternate ease-in-out infinite;
+}
+
+.Lv02 {
+    /* Photoshop */
+    width: 20%;
+}
+
+.Lv03 {
+    /* AdobeXD */
+    width: 40%;
+}
+
+.Lv04 {
+    /* Inkscape */
+    width: 80%;
+}
+
+.Lv05 {
+    /* GIMP */
+    width: 60%;
+}
+
+@keyframes up-level {
+    from {
+        width: 0%;
+    }
+}

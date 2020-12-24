@@ -1,0 +1,25 @@
+#rect843 {
+    fill: transparent;
+    animation: color-text .5s ease-in-out forwards 2s;
+}
+
+@keyframes anima-text {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+#path865 {
+    stroke-width: 1px;
+    stroke: #045504;
+    stroke-dasharray: 3000px;
+    stroke-dashoffset: 3000px;
+    fill: transparent;
+    animation: anima-text 5s ease-in-out forwards 0s;
+}
+
+@keyframes color-text {
+    to {
+        fill: #045504;
+    }
+}
