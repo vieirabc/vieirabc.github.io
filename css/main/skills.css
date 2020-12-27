@@ -1,0 +1,87 @@
+/* SKILLS */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills h2 {
+    font-size: 2em;
+    font-family: 'Josefin Slab', Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 10px;
+}
+
+.skill-list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+/* LEVEL-BAR */
+
+.softwares {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    padding-top: 10px;
+}
+
+.softwares img {
+    width: 50px;
+    padding-right: 10px;
+}
+
+.lv-bar {
+    width: calc(95% - 50px);
+    height: 20px;
+    border-radius: 20px;
+    background: linear-gradient( 10deg, #575757, rgb(32, 30, 30));
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    transition: width ease-in-out .5s;
+} .lv-bar:hover {
+    width: calc(100% - 50px);
+}
+
+.lv-bar-percent {
+    height: 100%;
+    background: linear-gradient(10deg, #19990d, #165310);  
+    border-radius: 20px;
+    text-align: center;
+    line-height: 1.7;
+    font-family: 'Nova Flat', Georgia, 'Times New Roman', Times, serif;
+    font-size: .8em;
+    transition: all ease-in-out 1s;
+    color: white;
+}
+
+/*Lv X*/
+
+.Lv01 {
+    /* Illustrator */
+    width: 40%;
+    /*animation: up-level 1s ease-in-out;*/
+}
+
+.Lv02 {
+    /* Photoshop */
+    width: 20%;
+}
+
+.Lv03 {
+    /* AdobeXD */
+    width: 40%;
+}
+
+.Lv04 {
+    /* Inkscape */
+    width: 80%;
+}
+
+.Lv05 {
+    /* GIMP */
+    width: 60%;
+}

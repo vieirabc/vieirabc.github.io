@@ -1,0 +1,62 @@
+/* PERFIL */
+
+.perfil {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.perfil-txt {
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.perfil-txt h2 {
+    font-family: 'Josefin Slab', Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+.perfil-txt p {
+    padding-bottom: 2%;
+    font-size: 1.1em;
+}
+
+.social-media {
+    width: 40%;
+    min-width: 178px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+.social-media h3, .sm-footer h3{
+    font-family: 'Josefin Slab', Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 1.3em;
+    padding-bottom: .5em;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-icons a {
+    box-sizing: border-box;
+    padding: 0 7.5px;
+    display: flex;
+    justify-content: center;
+    width: 33%;
+}
+
+.social-media-icons img {
+    width: 100%;
+    max-width: 50px;
+    transition: transform .2s;
+} .social-media-icons img:hover {
+    transform: scale(1.2);
+}

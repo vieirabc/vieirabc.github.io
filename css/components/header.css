@@ -1,0 +1,19 @@
+/*HEADER*/
+
+header {
+    text-align: center;
+}
+
+.vetorized-picture {
+    width: 18%;
+    min-width: 150px;
+    border-radius: 100%;
+    margin: 3% auto 1%;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    font-family: 'Josefin Slab', Georgia, 'Times New Roman', Times, serif;
+    padding: .5em 2em;
+    color: #045504;
+}

@@ -5,6 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- CSS -->
+        <!-- reset -->
+    <link rel="stylesheet" href="css/reset.css">
+        <!-- all -->
+    <link rel="stylesheet" href="css/components/all.css">
+        <!-- header -->
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/title-svg.css"> <!-- Title SVG -->
+    <link rel="stylesheet" href="css/components/btn.css">
+        <!-- main -->
+    <link rel="stylesheet" href="css/main/main.css">
+    <link rel="stylesheet" href="css/main/perfil.css">
+    <link rel="stylesheet" href="css/main/skills.css">
+    <link rel="stylesheet" href="css/main/portfolio.css">
+        <!-- footer -->
+    <link rel="stylesheet" href="css/components/footer.css">
+        <!-- mobile -->
+    <link rel="stylesheet" href="css/components/mobile.css">
+
     <!-- FONTS
     font-family: 'Dancing Script', cursive;
     font-family: 'Nova Flat', cursive;
@@ -15,11 +34,8 @@
     -->
     <link rel="stylesheet" href="css/fonts.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/title-svg.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/level-bar.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
     <!-- TITLE -->
     <title>Bruno Vieira</title>
@@ -28,7 +44,7 @@
 
     <header>
         <img src="img/vieirabc_vetorized.svg" alt="Bruno Vieira, Vetorização" class="vetorized-picture">
-        <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" id="Vetor-Title" version="1.1" viewBox="0 0 100 17.167" height="17.167mm" width="100mm">
+        <svg class="svg-title" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" id="Vetor-Title" version="1.1" viewBox="0 0 100 17.167" height="17.167mm" width="100mm">
             <defs id="defs2" />
             <metadata id="metadata5">
                 <rdf:RDF><cc:Work rdf:about="">
@@ -52,7 +68,7 @@
         </svg>
 
         <h2 class="subtitle">Desenvolvedor Front-End e Ilustrador</h2>
-        <button class="btn btn-portfolio">Portifólio</button>
+        <button class="btn btn-header" id="btn-header">portifólio</button>
     </header>
 
     <main>
@@ -61,118 +77,134 @@
             <div class="social-media">
                 <h3>Me Siga nas Redes Sociais</h3>
                 <div class="social-media-icons">
-                    <a href="#"><img src="img/ico/social-media/facebook.svg" alt="facebook" lang="en"></a>
-                    <a href="#"><img src="img/ico/social-media/instagram.svg" alt="instagram" lang="en"></a>
-                    <a href="#"><img src="img/ico/social-media/linkedin.svg" alt="linkedin" lang="en"></a>
+                    <a href="https://web.facebook.com/brunoazeredocruz/" target='_blanck'><img src="img/ico/social-media/facebook.svg" alt="facebook" lang="en"></a>
+                    <a href="https://www.instagram.com/" target='_blanck'><img src="img/ico/social-media/instagram.svg" alt="instagram" lang="en"></a>
+                    <a href="https://www.linkedin.com/in/bruno-azeredo-cruz-9574a519a/" target='_blanck'><img src="img/ico/social-media/linkedin.svg" alt="linkedin" lang="en"></a>
                 </div>
             </div> <!-- social-media -->
+
 
             <article class="perfil-txt">
                 <h2>Quem Sou Eu?</h2>
                 <p>Olá! Sou Bruno Vieira, capixaba de 21 anos, morando em Manaus desde 2017.</p>
-                <p>Vim parar na região norte quando ainda era muleque. Morei em Porto Velho, Extrema e Presidente Figueiredo, antes de desgrudar dos meus pais e vir pra Manaus descobrir a imensa diferença entre o Ensino Médio e a Faculdade.</p>
-                <p>Estou cursando Engenharia Elétrica Eletrônica na UFAM, e desde meu 2º semestre que me encontro apaixonado por programação. Me encontrei em Font-End, e venho me aperfeiçoando nessa área.</p>
+                <p>Vim parar na região norte ainda criança. Morei em Porto Velho, Extrema e Presidente Figueiredo, antes de desgrudar dos meus pais e vir pra Manaus descobrir a imensa diferença entre o Ensino Médio e a Faculdade.</p>
+                <p>Estou cursando Engenharia Elétrica Eletrônica na UFAM, e desde meu 2º semestre que me encontro apaixonado por programação. Me encontrei em Font-End, e venho me aperfeiçoando nessa área desde então.</p>
                 <p>Atualmente, venho recebendo treinamento pelo IPDEC, e estou trabalhando num projeto juntamente com alguns amigos.</p>
             </article> <!-- perfil-txt -->
 
         </section> <!-- perfil -->
 
 
-        <section class="skills">
+        <section id='secSkills' class="skills">
             <h2>Minhas Habilidades</h2>
             <ul class="skill-list">
                 <li class="softwares">
                     <a href="https://www.adobe.com/br/products/illustrator.html?promoid=PGRQQLFS&mv=other" target="_blank"><img src="img/ico/softwares/illustrator.svg" alt="Illustrator"></a>
-                    <div class="lv-bar"><div class="lv-bar-percent Lv01">40%</div></div>
-                </li>
+                    <div class="lv-bar" id="LvBar"><div class="lv-bar-percent Lv01" id='Lv1'>40%</div></div>
+                </li>       
                 <li class="softwares">
                     <a href="https://www.adobe.com/br/products/photoshop.html?promoid=PC1PQQ5T&mv=other" target="_blank"><img src="img/ico/softwares/photoshop.svg" alt="Photoshop"></a>
-                    <div class="lv-bar"><div class="lv-bar-percent Lv02">20%</div></div>
+                    <div class="lv-bar" id="LvBar"><div class="lv-bar-percent Lv02" id="Lv2">20%</div></div>
                 </li>
                 <li class="softwares">
                     <a href="https://www.adobe.com/br/products/xd.html?promoid=PYPVQ3HN&mv=other" target="_blank"><img src="img/ico/softwares/adobexd.svg" alt="AdobeXD"></a>
-                    <div class="lv-bar"><div class="lv-bar-percent Lv03">40%</div></div>
+                    <div class="lv-bar" id="LvBar"><div class="lv-bar-percent Lv03" id="Lv3">40%</div></div>
                 </li>
                 <li class="softwares">
                     <a href="https://inkscape.org/pt-br/" target="_blanck"><img src="img/ico/softwares/inkscape.svg" alt="Inkscape"></a>
-                    <div class="lv-bar"><div class="lv-bar-percent Lv04">80%</div></div>
+                    <div class="lv-bar" id="LvBar"><div class="lv-bar-percent Lv04" id="Lv4">80%</div></div>
                 </li>
                 <li class="softwares">
                     <a href="https://www.gimp.org/" target="_blank"><img src="img/ico/softwares/gimp.svg" alt="Gimp"></a>
-                    <div class="lv-bar"><div class="lv-bar-percent Lv05">60%</div></div>
+                    <div class="lv-bar" id="LvBar"><div class="lv-bar-percent Lv05" id="Lv5">60%</div></div>
                 </li>
             </ul>
         </section> <!-- skills -->
 
 
-        <section class="portfolio">
+        <section class="portfolio" id="Portfolio">
             <h2>Portifólio</h2>
             <div class="all-polaroids">
                 
-                <div class="polaroid">
-                    <div class="behind01"></div>
-                    <div class="behind02"></div>
-                    <div class="internal">
-                        <img src="img/ico/textura.svg" alt="">
-                        <h3>Titulo 01</h3>
-                    </div>
-                </div> <!-- polaroid -->
+                <div class="contain" id="Contain">
+                    <div class="polaroid">
+                        <div class="behind01"></div>
+                        <div class="behind02"></div>
+                        <div class="internal">
+                            <img src="img/ico/textures/textura.svg" alt="">
+                            <h3>Titulo 01</h3>
+                        </div>
+                    </div> <!-- polaroid -->
+                </div>
 
-                <div class="polaroid">
-                    <div class="behind01"></div>
-                    <div class="behind02"></div>
-                    <div class="internal">
-                        <img src="img/ico/textura.svg" alt="">
-                        <h3>Titulo 02</h3>
-                    </div>
-                </div> <!-- polaroid -->
+                <div class="contain" id="Contain">
+                    <div class="polaroid">
+                        <div class="behind01"></div>
+                        <div class="behind02"></div>
+                        <div class="internal">
+                            <img src="img/ico/textures/textura.svg" alt="">
+                            <h3>Titulo 02</h3>
+                        </div>
+                    </div> <!-- polaroid -->
+                </div>
 
-                <div class="polaroid">
-                    <div class="behind01"></div>
-                    <div class="behind02"></div>
-                    <div class="internal">
-                        <img src="img/ico/textura.svg" alt="">
-                        <h3>Titulo 03</h3>
-                    </div>
-                </div> <!-- polaroid -->
+                <div class="contain" id="Contain">
+                    <div class="polaroid">
+                        <div class="behind01"></div>
+                        <div class="behind02"></div>
+                        <div class="internal">
+                            <img src="img/ico/textures/textura.svg" alt="">
+                            <h3>Titulo 03</h3>
+                        </div>
+                    </div> <!-- polaroid -->
+                </div>
 
-                <div class="polaroid">
-                    <div class="behind01"></div>
-                    <div class="behind02"></div>
-                    <div class="internal">
-                        <img src="img/ico/textura.svg" alt="">
-                        <h3>Titulo 04</h3>
-                    </div>
-                </div> <!-- polaroid -->
+                <div class="contain" id="Contain">
+                    <div class="polaroid">
+                        <div class="behind01"></div>
+                        <div class="behind02"></div>
+                        <div class="internal">
+                            <img src="img/ico/textures/textura.svg" alt="">
+                            <h3>Titulo 04</h3>
+                        </div>
+                    </div> <!-- polaroid -->
+                </div>
 
-                <div class="polaroid">
-                    <div class="behind01"></div>
-                    <div class="behind02"></div>
-                    <div class="internal">
-                        <img src="img/ico/textura.svg" alt="">
-                        <h3>Titulo 05</h3>
-                    </div>
-                </div> <!-- polaroid -->
+                <div class="contain" id="Contain">
+                    <div class="polaroid">
+                        <div class="behind01"></div>
+                        <div class="behind02"></div>
+                        <div class="internal">
+                            <img src="img/ico/textures/textura.svg" alt="">
+                            <h3>Titulo 05</h3>
+                        </div>
+                    </div> <!-- polaroid -->
+                </div>
                 
             </div>
         </section> <!-- portfolio -->
     </main>
 
     <footer>
-        <button class="btn btn-backToTop">Voltar ao Topo</button>
+        <button class="btn btn-footer" id="btn-Home">voltar ao topo</button>
         <div class="container">
-            <img src="img/bacco_entertainments.svg" alt="logotipo Bacco Entertainments">
-            <div class="social-media-end">
+            <div class="svg-bacco">
+                <img src="img/bacco_entertainments.svg" alt="logotipo Bacco Entertainments">
+            </div>
+            <div class="sm-footer">
                 <h3>Me Siga nas Redes Sociais</h3>
-                <div class="social-media-icons-end">
-                    <a href="#"><img src="img/ico/social-media/facebook.svg" alt="facebook" lang="en"></a>
-                    <a href="#"><img src="img/ico/social-media/instagram.svg" alt="instagram" lang="en"></a>
-                    <a href="#"><img src="img/ico/social-media/linkedin.svg" alt="linkedin" lang="en"></a>
+                <div class="sm-icons-footer">
+                    <div class="sm-box">
+                        <a href="https://web.facebook.com/brunoazeredocruz/" target='_blanck'><img src="img/ico/social-media/facebook.svg" alt="facebook" lang="en"></a>
+                        <a href="https://www.instagram.com/" target='_blanck'><img src="img/ico/social-media/instagram.svg" alt="instagram" lang="en"></a>
+                        <a href="https://www.linkedin.com/in/bruno-azeredo-cruz-9574a519a/" target='_blanck'><img src="img/ico/social-media/linkedin.svg" alt="linkedin" lang="en"></a>
+                    </div>
                 </div>
             </div> <!-- social-media -->
         </div>
         <p> &copy;Website developed by Bruno Vieira</p>
     </footer>
 
+    <script src="js/app.js"></script>
 </body>
 </html>
