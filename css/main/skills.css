@@ -1,0 +1,90 @@
+/* SKILLS */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills h2 {
+    font-size: 2em;
+    font-family: 'Josefin Slab', Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 10px;
+}
+
+.skill-list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+/* LEVEL-BAR */
+
+.softwares {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    padding-top: 10px;
+}
+
+.softwares img {
+    width: 50px;
+    padding-right: 10px;
+}
+
+.lv-bar {
+    width: calc(95% - 50px);
+    height: 20px;
+    border-radius: 20px;
+    background: linear-gradient( 10deg, #4e4e4e, #000000);
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    transition: width ease-in-out .5s;
+} .lv-bar:hover {
+    width: calc(100% - 50px);
+}
+
+.lv-bar-percent {
+    height: 100%;;  
+    border-radius: 20px;
+    text-align: center;
+    line-height: 1.7;
+    font-family: 'Nova Flat', Georgia, 'Times New Roman', Times, serif;
+    font-size: .8em;
+    transition: all ease-in-out 1s;
+    color: white;
+}
+
+/*Lv X*/
+
+.Lv01 {
+    /* Illustrator */
+    width: 40%;
+    background: linear-gradient(10deg, #330000ff, #ff9a00ff);
+}
+
+.Lv02 {
+    /* Photoshop */
+    width: 20%;
+    background: linear-gradient(10deg, #001e36ff, #31a8ffff);
+}
+
+.Lv03 {
+    /* AdobeXD */
+    width: 40%;
+    background: linear-gradient(10deg, #470137ff, #ff61f6ff);
+}
+
+.Lv04 {
+    /* Inkscape */
+    width: 80%;
+    background: linear-gradient(10deg, black, white);
+}
+
+.Lv05 {
+    /* GIMP */
+    width: 60%;
+    background: linear-gradient(10deg, #464033, rgb(145, 129, 91));
+}
