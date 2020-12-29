@@ -82,6 +82,7 @@ footer {
 
 .sm-box a img {
     width: 100%;
+    border-radius: 15px;
     min-width: 50px;
     box-sizing: border-box;
     padding: 15%;

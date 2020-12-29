@@ -55,6 +55,7 @@
 
 .social-media-icons img {
     width: 100%;
+    border-radius: 15px;
     max-width: 50px;
     transition: transform .2s;
 } .social-media-icons img:hover {

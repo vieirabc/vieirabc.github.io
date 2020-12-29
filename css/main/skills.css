@@ -37,7 +37,7 @@
     width: calc(95% - 50px);
     height: 20px;
     border-radius: 20px;
-    background: linear-gradient( 10deg, #575757, rgb(32, 30, 30));
+    background: linear-gradient( 10deg, #4e4e4e, #000000);
     display: flex;
     align-items: center;
     padding: 4px;
@@ -47,8 +47,7 @@
 }
 
 .lv-bar-percent {
-    height: 100%;
-    background: linear-gradient(10deg, #19990d, #165310);  
+    height: 100%;;  
     border-radius: 20px;
     text-align: center;
     line-height: 1.7;
@@ -63,25 +62,29 @@
 .Lv01 {
     /* Illustrator */
     width: 40%;
-    /*animation: up-level 1s ease-in-out;*/
+    background: linear-gradient(10deg, #330000ff, #ff9a00ff);
 }
 
 .Lv02 {
     /* Photoshop */
     width: 20%;
+    background: linear-gradient(10deg, #001e36ff, #31a8ffff);
 }
 
 .Lv03 {
     /* AdobeXD */
     width: 40%;
+    background: linear-gradient(10deg, #470137ff, #ff61f6ff);
 }
 
 .Lv04 {
     /* Inkscape */
     width: 80%;
+    background: linear-gradient(10deg, black, white);
 }
 
 .Lv05 {
     /* GIMP */
     width: 60%;
+    background: linear-gradient(10deg, #464033, rgb(145, 129, 91));
 }

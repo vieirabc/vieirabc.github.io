@@ -11,7 +11,7 @@
 
 #path865 {
     stroke-width: 1px;
-    stroke: #045504;
+    stroke: #005544ff;
     stroke-dasharray: 3000px;
     stroke-dashoffset: 3000px;
     fill: transparent;
@@ -20,6 +20,6 @@
 
 @keyframes color-text {
     to {
-        fill: #045504;
+        fill: #005544ff;
     }
 }
